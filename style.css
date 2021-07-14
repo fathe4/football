@@ -35,7 +35,7 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 10px 24px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     transition: all .3s ease;
 }
@@ -97,7 +97,7 @@ a i{
 
 /* Player Boxes design end */
 
-/* Review section style start */
+/* Fans Review section style start */
 .review_section{
     width: 1035px;
     margin: 70px auto;
@@ -156,7 +156,7 @@ i.far.fa-star.empty {
 .second-row {
     margin-top: 15px;
 }
-/* Review section style End */
+/* Fans Review section style End */
 
 /* Contact section style */
 .contact {
@@ -241,9 +241,15 @@ footer {
 
 /* Footer style end */
 
-/* Responsive for tablet */
+
+
+/*------------------
+         Responsive for tablet 
+--------------------------------------*/
 
 @media only screen and (max-width:992px) {
+
+    /* Hero area style */
 
     .Hero-area {
         height: 500px;
@@ -255,6 +261,8 @@ footer {
     .banner {
         width: 390px;
     }
+
+    /* Player detail box style */
 
     .player-details-box, .review_section, .contact{
         width: 100%;
@@ -268,12 +276,14 @@ footer {
         margin: 0 auto;
     }
 
+    /* Fans Review style */
+
     .reviews{
         width: 100%;
         grid-template-columns: repeat(1, 1fr);        
     }
 
-   
+   /* Contact form style */
     
     form{
         margin-left: 40px;
@@ -285,6 +295,9 @@ footer {
     textarea#form {
         width: 90%;
     }
+
+    /* Footer style  */
+
     .footer-logo img{
         width: 400px;
 
@@ -293,9 +306,14 @@ footer {
 }
 
 
-/* Responsive for mobile */
+/*-----------
+        Responsive for mobile
+-------------------------------------- */
+
 
 @media only screen and (max-width:680px) {
+
+    /* Hero area style */
 
     .Hero-area{
         display: flex;
@@ -328,6 +346,8 @@ footer {
         width: 329px;
     }
 
+    /* Player detail box style */
+
     .player-details-box, .review_section, .contact{
         width: 100%;
     }
@@ -340,6 +360,8 @@ footer {
         margin: 0 auto;
     }
 
+    /* Fans Review style */
+
     .review{
         width: 80%;        
     }
@@ -347,6 +369,8 @@ footer {
     h2.fan-name {
         font-size: 16px;
     }
+
+    /* Contact Form style */
     
     form{
         margin-left: 45px;
@@ -359,6 +383,9 @@ footer {
     textarea#form {
         width: 80%;
     }
+
+    /* Footer style */
+
     .footer-logo img{
         width: 150px;
         margin-bottom: 29px;
