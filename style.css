@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
+   
 }
 body{
     margin: 0;
@@ -137,6 +138,13 @@ h2.client-name {
 .ratings {
     display: flex;
 }
+i.fas.fa-star.filled {
+    color: #ffde1a;
+}
+
+i.far.fa-star.empty {
+    color: #ffde1a;
+}
 
 
 .second-row {
@@ -148,6 +156,16 @@ h2.client-name {
 .contact {
     width: 700px;
     margin: 0 auto;
+}
+
+section.contact h1 {
+    font-size: 32px;
+    text-align: center;
+    margin: 80px 0;
+}
+
+#form:focus {
+    outline: none;
 }
 
 #form{
@@ -168,16 +186,16 @@ textarea#form {
 
 input#form-btn {
     padding: 10px 40px;
-    border-radius: 5px;
     font-size: 14px;
-    border: 1px solid #ccc;
+    border: 2px solid #000;
     cursor: pointer;
-    font-weight: 400;
+    background: transparent;
     transition: all .3s;
 }
 input#form-btn:hover {
     background: #2D25A0;
     color: #fff;
+    border: 2px solid #2D25A0;
 }
 /* Contact section End */
 
@@ -216,3 +234,96 @@ footer {
 }
 
 /* Footer style end */
+
+/* Responsive for tablet */
+
+@media only screen and (max-width:992px) {
+
+    /* .first-width, .sec-width{
+        width: 100%;
+    } */
+
+    .player-details-box, .review_section, .contact{
+        width: 100%;
+    }
+
+    .player-boxes, 
+    .player-box, 
+    .review
+    {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+
+    .reviews{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);        
+    }
+
+    .Hero-area{
+        display: none;
+    }
+    
+    form{
+        margin-left: 40px;
+    }
+    #form {
+        width: 90%;
+    
+    }
+    textarea#form {
+        width: 90%;
+    }
+    .footer-logo img{
+        width: 400px;
+
+    }
+    
+}
+
+
+/* Responsive for mobile */
+
+@media only screen and (max-width:680px) {
+
+    .first-width, .sec-width{
+        width: 100%;
+    }
+
+    .player-details-box, .review_section, .contact{
+        width: 100%;
+    }
+
+    .player-boxes, 
+    .player-box, 
+    .reviews,
+    .review{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+
+    .review{
+        width: 80%;        
+    }
+
+    .Hero-area{
+        display: none;
+    }
+    
+    form{
+        margin-left: 45px;
+    }
+    #form {
+        width: 80%;
+        
+        
+    }
+    textarea#form {
+        width: 80%;
+    }
+    .footer-logo img{
+        width: 150px;
+
+    }
+    
+}
