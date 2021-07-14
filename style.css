@@ -41,6 +41,7 @@ a i{
     margin-left: 8px;
     font-size: 14px;
 }
+
 .banner{
     width: 556px;
 }
@@ -73,9 +74,112 @@ a i{
 .player-img{
     width: 300px;
     height: 256px;
+    margin-bottom: 16px;
+}
+
+.player-box h3{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.player-box p{
+    color: #6C6C6C;
+    margin-top: 10px;
 }
 
 /* Player Boxes design end */
+
+/* Review section style start */
+.review_section{
+    width: 1035px;
+    margin: 70px auto;
+    background-color: rgba(255, 255, 255, 1);
+}
+section.review_section h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 32px;
+}
+.reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    grid-gap: 30px;
+}
+
+.review{
+    width: 480px;
+    border-radius: 5px;
+    padding: 15px 15px 33px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 40px 0 rgb(0 0 0 / 15%);
+}
+.first-row {
+    display: flex;
+    align-items: center;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+img.client-img {
+    width: 15%;
+    border-radius: 50%;
+}
+
+h2.client-name {
+    display: inline;
+    margin-left: 18px;
+}
+
+.ratings {
+    display: flex;
+}
+
+
+.second-row {
+    margin-top: 15px;
+}
+/* Review section style End */
+
+/* Contact section style */
+.contact {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#form{
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+textarea#form {
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+}
+
+input#form-btn {
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all .3s;
+}
+input#form-btn:hover {
+    background: #2D25A0;
+    color: #fff;
+}
+/* Contact section End */
 
 
 /* Footer style start */
