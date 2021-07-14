@@ -11,7 +11,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-/* Hero section style */
+/* Hero section style start */
 .Hero-area {
     display: flex;
     align-items: center;
@@ -30,13 +30,18 @@ body{
     color: #fff;
     margin-bottom: 42px;
 }
-.buttton {
+.button {
     background: #E02C6D;
     text-decoration: none;
     color: #fff;
     padding: 10px 24px;
     font-size: 14px;
     font-weight: 500;
+    transition: all .3s ease;
+}
+
+a.button:hover{
+    padding: 20px 30px;
 }
 
 a i{
@@ -47,6 +52,8 @@ a i{
 .banner{
     width: 556px;
 }
+
+/* Hero section style  end*/
 
 
 
@@ -61,8 +68,7 @@ a i{
 
 .player-boxes {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
+    grid-template-columns: repeat(3, 1fr);   
     grid-gap: 30px;
 }
 
