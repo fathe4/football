@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 *{
     margin: 0;
+    padding: 0;
    
 }
 body{
@@ -119,18 +120,17 @@ section.review_section h1 {
     display: flex;
     align-items: center;
 }
-
-.client {
+.fan-detial {
     display: flex;
     align-items: center;
 }
 
-img.client-img {
+img.fan-img {
     width: 15%;
     border-radius: 50%;
 }
 
-h2.client-name {
+h2.fan-name {
     display: inline;
     margin-left: 18px;
 }
@@ -239,9 +239,16 @@ footer {
 
 @media only screen and (max-width:992px) {
 
-    /* .first-width, .sec-width{
-        width: 100%;
-    } */
+    .Hero-area {
+        height: 500px;
+    }
+    .hero-area-text {
+        font-size: 34px;
+    }
+
+    .banner {
+        width: 390px;
+    }
 
     .player-details-box, .review_section, .contact{
         width: 100%;
@@ -260,9 +267,7 @@ footer {
         grid-template-columns: repeat(1, 1fr);        
     }
 
-    .Hero-area{
-        display: none;
-    }
+   
     
     form{
         margin-left: 40px;
@@ -286,8 +291,35 @@ footer {
 
 @media only screen and (max-width:680px) {
 
-    .first-width, .sec-width{
+    .Hero-area{
+        display: flex;
+        flex-direction: column;
+        height: 695px;
+        
+    }
+
+    .first-width, .banner {
         width: 100%;
+        
+    }
+
+    .hero-area-text{
+        font-size: 36px;
+        margin-left: 15px;
+    }
+    
+    .buttton {
+         padding: 10px 14px;
+         margin-left: 15px;
+    }
+
+    .sec-width {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+
+    .banner{
+        width: 329px;
     }
 
     .player-details-box, .review_section, .contact{
@@ -306,8 +338,8 @@ footer {
         width: 80%;        
     }
 
-    .Hero-area{
-        display: none;
+    h2.fan-name {
+        font-size: 16px;
     }
     
     form{
@@ -323,7 +355,12 @@ footer {
     }
     .footer-logo img{
         width: 150px;
+        margin-bottom: 29px;
 
+    }
+
+    .footer-socail-icons{
+        margin-bottom: 20px;
     }
     
 }
